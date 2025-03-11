@@ -12,14 +12,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.3.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\MovieApi.Application\MovieApi.Application.csproj" />
     <ProjectReference Include="..\..\MovieApi.Persistence\MovieApi.Persistence.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
