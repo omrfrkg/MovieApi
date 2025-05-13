@@ -14,7 +14,7 @@ namespace MovieApi.Application.Features.MediatorDesingPattern.Handlers.CastHandl
     public class GetCastQueryHandler : IRequestHandler<GetCastQuery, List<GetCastQueryResult>>
     {
         private readonly MovieContext _context;
-public GetCastQueryHandler(MovieContext context)
+        public GetCastQueryHandler(MovieContext context)
         {
             _context = context;
         }
@@ -25,6 +25,7 @@ public GetCastQueryHandler(MovieContext context)
             return values.Select(x => new GetCastQueryResult
             {
                 Biography = x.Biography,
+                Surname = x.Surname,
                 CastId = x.CastId,
                 ImageUrl = x.ImageUrl,
                 Name = x.Name,
